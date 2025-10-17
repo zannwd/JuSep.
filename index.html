@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JuSep. | Official Links</title>
+  <style>
+    :root {
+      --bg: #000;
+      --text: #fff;
+      --gray: #aaa;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url('a.jpg') center/cover no-repeat fixed;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Efek overlay hitam transparan agar teks tetap terbaca */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 36px 24px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .profile img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 12px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      color: var(--gray);
+      margin-bottom: 28px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      transition: all 0.3s ease;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .link:hover {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    .icon {
+      font-size: 1.3rem;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 1.7rem;
+      }
+      .profile img {
+        width: 80px;
+        height: 80px;
+      }
+      .container {
+        padding: 28px 18px;
+      }
+    }
+  </style>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="a.jpg" alt="Foto Profil JuSep.">
+      <div class="logo">JuSep.</div>
+    </div>
+    <div class="tagline">Made to move with you.</div>
+
+    <div class="links">
+      <a href="https://wa.me/6287861527014" class="link" target="_blank">
+        <i class="bx bxl-whatsapp icon"></i> WhatsApp
+      </a>
+      <a href="http://shopee.co.id/hamzanxe" class="link" target="_blank">
+        <i class="bx bxl-shopify icon"></i> Shopee
+      </a>
+      <a href="https://instagram.com/jusep.id" class="link" target="_blank">
+        <i class="bx bxl-instagram icon"></i> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@jusep.id?_t=ZS-90czXHV4j3f&_r=1" class="link" target="_blank">
+        <i class="bx bxl-tiktok icon"></i> TikTok Shop
+      </a>
+      <a href="https://drive.google.com/drive/folders/1YwKd-c65le3VegvkBH3t2y5uV7ekCbLZ" class="link" target="_blank">
+        <i class="bx bxs-folder-open icon"></i> Desain Produk
+      </a>
+    </div>
+
+    <footer>© 2025 JuSep. All rights reserved.</footer>
+  </div>
+</body>
+</html>
